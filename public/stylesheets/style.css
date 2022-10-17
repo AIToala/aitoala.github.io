@@ -508,6 +508,9 @@ body {
 .photo-bg .music-box > :first-child{
     margin-bottom: 15px;
 }
+.photo-bg .music-box .music-list{
+    list-style: disc inside;
+}
 .photo-bg .music-box ul > *{
     margin-bottom: 5px;
 }
