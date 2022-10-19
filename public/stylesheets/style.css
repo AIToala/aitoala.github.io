@@ -45,8 +45,12 @@ ul{
 h1,h2,h3,h4,h5,h6{
     font-family: var(--font-poppins);
 }
+h3{
+    font-weight: 300;
+}
 p{
     font-family: var(--font-roboto);
+    font-weight: 300;
 }
 div{
     position: relative;
@@ -96,7 +100,7 @@ div{
     font-size: 5em;
 }
 .name{
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 1px 3px 11px rgb(0 0 0 / 30%);
@@ -115,6 +119,9 @@ div{
 }
 .font-bold{
     font-weight: bold;
+}
+.font-light{
+    font-weight: 300;
 }
 .inline-flex{
     display: inline-flex;
@@ -256,6 +263,18 @@ div{
 .w-100{
     width: 100%;
 }
+.w-93{
+    width: 93%;
+}
+.w-91{
+    width: 91%;
+}
+.w-72{
+    width: 72%;
+}
+.w-85{
+    width: 85%;
+}
 .w-50{
     width: 50%;
 }
@@ -301,6 +320,7 @@ div{
 /* ------------ Global Clases ------------ */
 ::selection{
     background-color: #e34061;
+    color: #FFF;
 }
 /* ------------ Media Query ------------ */
 
@@ -370,11 +390,11 @@ div{
     background-color: #fff;
     border-radius: 5px;
     padding: .5rem 1rem;
-    width: 30ch;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid #00ADB5;
-    animation: typing 2s steps(34), blink .5s step-end infinite alternate;
+    animation: typing 2.5s steps(34), blink .5s step-end infinite alternate;
 }
 @keyframes typing {
   from {
@@ -521,7 +541,12 @@ div{
 .photo .socials-about li .icon:hover{
     fill: #e34061!important;    
 }
-
+.photo-bg .music-box{
+    width: 400px;
+}
+.photo-bg .music-box > *{
+    font-size: small;
+}
 .photo-bg .music-box > :first-child{
     margin-bottom: 15px;
 }
@@ -597,12 +622,10 @@ div{
 }
 .exp-cont section .box-list li p{
     font-weight: 300;
-    font-size: 20px;
     font-family: var(--font-roboto);
 }
 .exp-cont section .box-list li h3{
     font-weight: 500;
-    font-size: 24px;
     font-family: var(--font-roboto);
 }
 .exp-cont section .skills{
@@ -610,14 +633,45 @@ div{
     width: 100%;
     height: 100%;
     padding: 40px 40px;
-
 }
+.exp-cont section .skills .skills-list{
+    padding: 0 2.5% 0 2.5%;
+}
+
+.exp-cont section .skills .skills-list > :last-child{
+    background-color: var(--text-decor1);
+}
+.exp-cont section .skills > *{
+    font-family: var(--font-roboto)!important;
+    margin-bottom: 25px;
+}
+.exp-cont section .skills > :last-child{
+    margin-bottom: 0px;
+}
+.exp-cont section .skills .skills-list li > *{
+    font-weight: 300;
+    font-family: var(--font-roboto);
+}
+
 .exp-cont section .skills hr{
-    width: 100%;
     background-color: var(--text-important);
     border: none;
     height: 1px;
 }
+.exp-cont section .skills .languages{
+    gap: 25px;
+    width: 100%;
+    padding: 1%;
+    background-color: #FFF;
+    color: #000;
+}
+.exp-cont section .skills .languages hr{
+    background-color: var(--text-important);
+    border: none;
+    height: 1px;
+    width: 100%;
+}
+
 .exp-cont > hr{
     width: 100%;
     background-color: var(--text-secondary);
