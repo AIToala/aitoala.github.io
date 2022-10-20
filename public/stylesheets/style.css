@@ -236,6 +236,12 @@ div{
     background: var(--bg-pres-cover);
     object-fit: fill;
 }
+.bg-secondary{
+    background: var(--text-secondary);
+}
+.bg-decor1{
+    background: var(--text-decor1)!important;
+}
 .border-decor1{
     border-color: var(--text-decor1);
 }
@@ -316,7 +322,10 @@ div{
     color: var(--text-secondary);
     font-weight: 700;
 }
-
+.line{
+    border: none;
+    height: 1px;
+}
 /* ------------ Global Clases ------------ */
 ::selection{
     background-color: #e34061;
@@ -638,9 +647,6 @@ div{
     padding: 0 2.5% 0 2.5%;
 }
 
-.exp-cont section .skills .skills-list > :last-child{
-    background-color: var(--text-decor1);
-}
 .exp-cont section .skills > *{
     font-family: var(--font-roboto)!important;
     margin-bottom: 25px;
@@ -665,11 +671,14 @@ div{
     background-color: #FFF;
     color: #000;
 }
+.exp-cont section .skills .languages ul{
+    list-style: disc inside;
+}
 .exp-cont section .skills .languages hr{
     background-color: var(--text-important);
     border: none;
     height: 1px;
-    width: 100%;
+    width: 50%;
 }
 
 .exp-cont > hr{
@@ -679,6 +688,43 @@ div{
     height: 1px;
 }
 
+/* ------------ Latest works Section ------------ */
+
+
+#works{
+    width: 100%;
+    background: #201f23;
+    margin: 0 2% 0 2%;
+}
+
+#works .works-list{
+    width: 100%;
+    padding: 5%;
+}
+#works .works-list > *{
+    margin-bottom: 120px;
+}
+
+#works .works-list .work{
+    width: 100%;
+    height: 100%;
+    padding: 2.5%;
+    border: 1px solid var(--text-secondary);
+    border-radius: 20px;
+}
+#works .works-list .work h3{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+#works .works-list .work p, #works .works-list .work h3{
+    text-align: right;
+}
+#works .works-list .work .work-img img{
+    width: 75%;
+    height: auto;
+}
 /* ------------ Footer ------------ */
 .footer{
     position: relative;
